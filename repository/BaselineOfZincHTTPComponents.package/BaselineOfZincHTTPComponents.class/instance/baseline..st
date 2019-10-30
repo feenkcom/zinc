@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec for: #common do: [ 
 		spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:v17/repository' ].
-		spec baseline: 'XMLParser' with: [ spec repository: 'github://feenkcom/XMLParser/src' ].
+		spec baseline: 'XMLParser' with: [ spec repository: 'github://feenkcom/XMLParser:v0.6.1/src' ].
 		spec baseline: 'XMLWriter' with: [ spec repository: 'github://feenkcom/XMLWriter/src' ].
 		"spec project: 'XML Support' with: [ spec className: 'ConfigurationOfXMLSupport'; repository: 'http://www.squeaksource.com/MetacelloRepository' ]."
 		spec package: 'Zodiac-Core' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
