@@ -7,6 +7,8 @@ testQueryGoogle
 		host: 'www.google.com';
 		addPath: 'search';
 		queryAt: 'q' put: 'Pharo Smalltalk';
+		retryDelay: 2;
+		numberOfRetries: 2;
 		get.
 	
 	[	
