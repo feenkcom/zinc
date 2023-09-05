@@ -16,6 +16,8 @@ baseline: spec
 			spec requires: #('Zinc-Resource-Meta-Core') ].
 		spec package: 'Zinc-HTTP' with: [
 			spec requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ].
+		spec package: 'Zinc-HTTP-UnixSocket' with: [
+			spec requires: #('Zinc-HTTP') ].
 		spec package: 'Zinc-HTTP-Examples' with: [
 			spec requires: #('Zinc-HTTP') ].
 		spec package: 'Zinc-Tests' with: [
