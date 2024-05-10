@@ -1,13 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "ZnCharacterEncoder",
+	"commentStamp" : "<historical>",
+	"super" : "ZnUTF8Encoder",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"ignoreByteOrderMark"
-	],
-	"name" : "ZnUTFEncoder",
+	"instvars" : [ ],
+	"name" : "ZnLossyUTF8Encoder",
 	"type" : "normal"
 }
