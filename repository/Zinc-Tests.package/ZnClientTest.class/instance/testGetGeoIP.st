@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetGeoIP
 	| result client |
-	result := (client := ZnClient new)
+	result := (client := self httpClient)
 		systemPolicy;
 		url: self t3EasyGeoIPUrl;
 		queryAt: 'address' put: '81.83.7.35';

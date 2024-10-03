@@ -1,14 +1,12 @@
-testing
+testing - external
 testQueryGoogle
 	| client |
 	
-	(client := ZnClient new)
+	(client := self httpClient)
 		http;
 		host: 'www.google.com';
 		addPath: 'search';
 		queryAt: 'q' put: 'Pharo Smalltalk';
-		retryDelay: 20;
-		numberOfRetries: 3;
 		get.
 	
 	[	
