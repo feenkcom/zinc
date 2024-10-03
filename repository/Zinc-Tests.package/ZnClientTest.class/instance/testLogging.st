@@ -1,4 +1,4 @@
-testing
+testing - external
 testLogging
 
 	| client logEventCollection count |
@@ -7,7 +7,7 @@ testLogging
 		when: ZnLogEvent
 		do: [ :event | logEventCollection add: event ]
 		for: self.
-	(client := ZnClient new)
+	(client := self httpClient)
 		clientId: #C1;
 		beOneShot.
 	client get: self smallHtmlUrl.
