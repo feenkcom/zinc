@@ -9,21 +9,21 @@ baseline: spec
 
 		spec package: 'Zinc-Character-Encoding-Core'.
 		spec package: 'Zinc-Character-Encoding-Tests' with: [
-			spec requires: #('Zinc-Character-Encoding-Core') ].
+			spec requires: #(#'Zinc-Character-Encoding-Core') ].
 		spec package: 'Zinc-Resource-Meta-Core' with: [
-			spec requires: #('Zinc-Character-Encoding-Core') ].
+			spec requires: #(#'Zinc-Character-Encoding-Core') ].
 		spec package: 'Zinc-Resource-Meta-Tests' with: [
-			spec requires: #('Zinc-Resource-Meta-Core') ].
+			spec requires: #(#'Zinc-Resource-Meta-Core') ].
 		spec package: 'Zinc-HTTP' with: [
-			spec requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ].
+			spec requires: #(#'Zinc-Character-Encoding-Core' #'Zinc-Resource-Meta-Core') ].
 		spec package: 'Zinc-HTTP-UnixSocket' with: [
-			spec requires: #('Zinc-HTTP') ].
+			spec requires: #(#'Zinc-HTTP') ].
 		spec package: 'Zinc-HTTP-Examples' with: [
-			spec requires: #('Zinc-HTTP') ].
+			spec requires: #(#'Zinc-HTTP') ].
 		spec package: 'Zinc-Tests' with: [
-			spec requires: #('Zinc-HTTP') ].
+			spec requires: #(#'Zinc-HTTP') ].
 		spec package: 'Zinc-Zodiac-Core' with: [
-			spec requires: #('Zinc-HTTP' 'ZodiacCore') ].
+			spec requires: #(#'Zinc-HTTP' #ZodiacCore) ].
 		spec package: 'Zinc-Zodiac-Tests' with: [
-			spec requires: #('Zinc-Zodiac-Core') ].
+			spec requires: #(#'Zinc-Zodiac-Core') ].
 	]
