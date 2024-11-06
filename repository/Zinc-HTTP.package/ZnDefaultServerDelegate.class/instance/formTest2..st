@@ -3,7 +3,7 @@ formTest2: request
 	| input page |
 	input := 'input'.
 	(request hasEntity and: [ request contentType matches: ZnMimeType applicationFormUrlEncoded  ])
-		ifTrue: [ input := request entity at: #input ifAbsent: [ 'input' ] ].
+		ifTrue: [ input := request entity at: 'input' ifAbsent: [ 'input' ] ].
 	page := ZnHtmlOutputStream streamContents: [ :html |
 		html page: 'Form Test 2' do: [
 			html
