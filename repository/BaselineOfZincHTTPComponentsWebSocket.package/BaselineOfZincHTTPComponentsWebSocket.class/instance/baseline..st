@@ -4,7 +4,7 @@ baseline: spec
 	spec for: #'common' do: [
 		spec
 			baseline: 'ZincHTTPComponentsCore' with: [
-				spec repository: 'github://feenkcom/zinc:v3.0.61/repository' ].
+				spec repository: 'github://feenkcom/zinc:v3.0.62/repository' ].
 
 		spec package: 'Zinc-WebSocket-Core' with: [
 			spec requires: #(#ZincHTTPComponentsCore) ].
