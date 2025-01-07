@@ -19,8 +19,9 @@ setupTLSTo: url
 
 	connection connect.
 	
-	connection sslSession certificateVerificationState = 0
-		ifFalse: [ 
+	((ZnCurrentOptions at: #verifyCertificates) 
+			and: [ connection sslSession certificateVerificationState ~= 0 ])
+		ifTrue: [ 
 			ZnCertificateVerificationFailed new 
 				verificationState: connection sslSession certificateVerificationState;
 				signal ]
