@@ -20,5 +20,5 @@ testQueryGoogle
 		client isSuccess  ifTrue: [
 			self 
 				assert: (client contents includesSubstring: 'pharo.org')
-				description: 'Response includes string pharo.org' ]
+				description: 'Response includes string pharo.org in: ', client contents ]
 	] ensure: [ client close ]
