@@ -2,17 +2,20 @@ testing - external
 testQuerySearchEngine
 	| client |
 
+	"Warning: search engine will not allow (many) API style requests and might start rejecting them"
+
 	(client := self httpClient)
+		maximumLineLength: 8 * 1024;
 		http;
-		host: 'duckduckgo.com';
-		addPath: 'html';
+		host: 'search.brave.com';
+		addPath: 'search';
 		queryAt: 'q' put: 'Pharo Smalltalk';
 		get.
 
 	[	
 		self 
-			assert: (client isSuccess or: [client response code = 429])
-			description: ('Response should be success or 429 code. Received {1}' format: {
+			assert: (client isSuccess)
+			description: ('Response should be success. Received {1}' format: {
 				client response  statusLine }).
 		self 
 			assert: (client response contentType matches: ZnMimeType textHtml)
