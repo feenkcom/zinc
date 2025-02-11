@@ -5,7 +5,7 @@ testQuerySearchEngine
 	"Warning: search engine will not allow (many) API style requests and might start rejecting them"
 
 	(client := self httpClient)
-		maximumLineLength: 8 * 1024;
+		maximumLineLength: 20 * 1024;
 		http;
 		host: 'search.brave.com';
 		addPath: 'search';
