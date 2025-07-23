@@ -1,6 +1,6 @@
 {
 	"repositories" : {
 		"github://svenvc/NeoJSON/repository" : "9af34bbc47823c740605967c46bfa376a1b81014",
-		"github://feenkcom/zodiac/repository" : "v1.0.7"
+		"github://feenkcom/zodiac/repository" : "v1.0.8"
 	}
 }

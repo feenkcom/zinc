@@ -5,7 +5,7 @@ baseline: spec
 		spec postLoadDoIt: #'postLoadCore:'.
 		spec
 			baseline: 'ZodiacCore' with: [
-				spec repository: 'github://feenkcom/zodiac:v1.0.7/repository' ].
+				spec repository: 'github://feenkcom/zodiac:v1.0.8/repository' ].
 
 		spec package: 'Zinc-Character-Encoding-Core'.
 		spec package: 'Zinc-Character-Encoding-Tests' with: [
