@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfZincHTTPComponentsWebSocket!
+self packageOrganizer ensurePackage: #BaselineOfZincHTTPComponentsWebSocket withTags: #()!
