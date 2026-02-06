@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WriteStream",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"cr",
+		"lf",
+		"previous",
+		"lineEnding",
+		"replacement"
+	],
+	"name" : "ZnIgnoreNewLineWriterStream",
+	"type" : "normal"
+}
