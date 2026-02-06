@@ -7,7 +7,7 @@ baseline: spec
 				spec repository: 'github://svenvc/NeoJSON:11e274dd96dc9636cab90929937b7cd09719de7c/repository' ].
 		spec
 			baseline: 'ZincHTTPComponentsCore' with: [
-				spec repository: 'github://feenkcom/zinc:v3.1.0/repository' ].
+				spec repository: 'github://feenkcom/zinc:v3.1.1/repository' ].
 
 		spec package: 'Zinc-REST' with: [
 			spec requires: #(#ZincHTTPComponentsCore #NeoJSON) ].
