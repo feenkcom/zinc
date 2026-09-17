@@ -14,8 +14,8 @@ testQuerySearchEngine
 
 	[	
 		self 
-			assert: (client isSuccess)
-			description: ('Response should be success. Received {1}' format: {
+			assert: (client isSuccess or: [client response code = 429])
+			description: ('Response should be success or 429 code. Received {1}' format: {
 				client response  statusLine }).
 		self 
 			assert: (client response contentType matches: ZnMimeType textHtml)
